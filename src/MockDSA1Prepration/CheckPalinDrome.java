@@ -3,10 +3,12 @@ package MockDSA1Prepration;
 public class CheckPalinDrome {
     public static void main(String[] args) {
         String str = "madam";
+        String s1 = "({[]})";
        // checkPalindrome(str);
        // System.out.println(checkPalindrome(str));
         String str2 = "aabbcc";
         System.out.println(compression(str2));
+        System.out.println(checkPalindrome(str));
 
     }
     //aabb
@@ -27,7 +29,7 @@ public class CheckPalinDrome {
           //  boolean found false;
             char firt = str.charAt(0);
             char last = str.charAt(str.length()-1);
-            while (firt<=last){
+            while (firt <= last){
                 if (firt == last){
                     return true;
                 }
